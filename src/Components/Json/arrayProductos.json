@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "nombre": "Banco",
+        "descripcion": "Muy Cómodo",
+        "imagen": ".../imagenes/Banco Colón con respaldo.jpeg",
+        "imagenHtml": "https://objetosdipo.com.ar/w14/wp-content/uploads/2015/01/imagen-destacada-portfolio-banco-colon-con-respaldo1-270x197_c.jpg",
+        "precio": 100.000,
+        "stock": 10,
+        "categoria": "Bancos"
+    }
+]

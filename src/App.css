@@ -3,8 +3,9 @@
 }
 .navbar{
     display: flex;
-    justify-items: center;
+    justify-items: flex-end;
     align-items: center;
+
 }
 .main{
     align-self: center;

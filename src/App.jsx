@@ -7,6 +7,7 @@ import NavBar from './Components/NavBar/NavBar.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Error from './Components/Error.jsx'
 import CartWidget from './Components/CartWidget/CartWidget.jsx'
+import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer.jsx'
 function App() {
   return (
     
@@ -14,9 +15,9 @@ function App() {
         <BrowserRouter>
         <NavBar/>
         <Routes>
-          <Route path={'/'} element={ <IntemListContainer/> }/>
-          <Route path={'/category/:id'} element={ <IntemListContainer/> }/>
-          <Route path={'/item/:id'} element= { <IntemDetailContainer/> }/>
+          <Route path={'/'} element={ <ItemListContainer/> }/>
+          <Route path={'/category/:id'} element={ <ItemListContainer/> }/>
+          <Route path={'/item/:id'} element= { <ItemDetailContainer/> }/>
           <Route path={'/cart'} element= { <CartWidget/> }/>
           <Route path={'*'} element= { <Error/> }/> 
         </Routes>

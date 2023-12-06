@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ItemDetail(item) {
+function ItemDetail({item}) {
   return (
     <div className='row'>
         <div className='col-md-4 lifset-md-4'>

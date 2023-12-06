@@ -1,12 +1,82 @@
 [
     {
         "id": 1,
-        "nombre": "Banco",
-        "descripcion": "Muy Cómodo",
-        "imagen": ".../imagenes/Banco Colón con respaldo.jpeg",
-        "imagenHtml": "https://objetosdipo.com.ar/w14/wp-content/uploads/2015/01/imagen-destacada-portfolio-banco-colon-con-respaldo1-270x197_c.jpg",
+        "nombre": "Banco Colón con respaldo",
+        "descripcion": "Muy Cómodo, el mas vendido, madera dura",
+        "imagen":"https://objetosdipo.com.ar/w14/wp-content/uploads/2015/01/imagen-destacada-portfolio-banco-colon-con-respaldo1-270x197_c.jpg",
         "precio": 100.000,
         "stock": 10,
         "categoria": "Bancos"
+    },
+    {
+        "id": 2,
+        "nombre": "Banco Colón sin respaldo",
+        "descripcion": "Muy Cómodo, adaptable, madera dura",
+        "imagen":"https://objetosdipo.com.ar/w14/wp-content/uploads/2015/01/imagen-destacada-portfolio-banco-colon-sin-respaldo-270x197_c.jpg",
+        "precio": 100.000,
+        "stock": 10,
+        "categoria": "Bancos"
+    },
+    {
+        "id": 3,
+        "nombre": "Banco Deck Esquina c/ Respaldo",
+        "descripcion": "Muy Cómodo, con respaldo, madera dura",
+        "imagen":"https://objetosdipo.com.ar/w14/wp-content/uploads/2015/01/imagen-destacada-portfolio-banco-deck-con-respaldo-270x197_c.jpg",
+        "precio": 100.000,
+        "stock": 10,
+        "categoria": "Bancos"
+    },
+    {
+        "id": 4,
+        "nombre": "Bebedero Gota Mascotas",
+        "descripcion": "Doble Función ",
+        "imagen":"https://objetosdipo.com.ar/w14/wp-content/uploads/2023/09/Dipo-bebedero-Gota-mascotas-Fondo-blanco-2-270x197_c.jpg",
+        "precio": 100.000,
+        "stock": 10,
+        "categoria": "Bebederos"
+    },{
+        "id": 5,
+        "nombre": "Bebedero Cascada",
+        "descripcion": " Para todas las edades",
+        "imagen":"https://objetosdipo.com.ar/w14/wp-content/uploads/2015/01/imagen-destacada-portfolio-bebedero-cascada1-270x197_c.jpg",
+        "precio": 100.000,
+        "stock": 10,
+        "categoria": "Bebederos"
+    },
+    {
+        "id": 6,
+        "nombre": "Bebederos Gota",
+        "descripcion": "Un Chorro",
+        "imagen":"https://objetosdipo.com.ar/w14/wp-content/uploads/2015/01/imagen-destacada-portfolio-bebedero-gota-270x197_c.jpg",
+        "precio": 100.000,
+        "stock": 10,
+        "categoria": "Bebederos"
+    },
+    {
+        "id": 7,
+        "nombre": "Porta Moto Cuña",
+        "descripcion": "Bicicletas y/o Motos",
+        "imagen":"https://objetosdipo.com.ar/w14/wp-content/uploads/2015/01/imagen-destacada-portfolio-portamoto-cuna2-270x197_c.jpg",
+        "precio": 100.000,
+        "stock": 10,
+        "categoria": "Bicicleteros"
+    },
+    {
+        "id": 8,
+        "nombre": "Bicicletero Cuña",
+        "descripcion": "Multiples agarres, mas de 4 bicicletas",
+        "imagen":"https://objetosdipo.com.ar/w14/wp-content/uploads/2015/01/imagen-destacada-portfolio-bicicletero-cuna-270x197_c.jpg",
+        "precio": 100.000,
+        "stock": 10,
+        "categoria": "Bicicleteros"
+    },
+    {
+        "id": 9,
+        "nombre": "Bicicletero Colón",
+        "descripcion": "Individual, Solo una bici",
+        "imagen":"https://objetosdipo.com.ar/w14/wp-content/uploads/2015/01/imagen-destacada-portfolio-bicicletero-colon-270x197_c.jpg",
+        "precio": 100.000,
+        "stock": 10,
+        "categoria": "Bicicleteros"
     }
 ]

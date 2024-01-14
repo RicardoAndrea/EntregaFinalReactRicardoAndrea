@@ -3,20 +3,21 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget';
 import Logo from '../Logo';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 function NavBar() {
   return (
     <>
       <Navbar bg="light" data-bs-theme="light">
         <Container className='main'>
-          <Navbar.Brand to= "/"> <Logo/> </Navbar.Brand>
-          <Nav.Item className="justify-content-center">
-            <Link to="/" className='pestaña'>   Home    </Link>
-            <Link to="/category/Bancos" className='pestaña'>   Bancos   </Link>
-            <Link to="/category/Bebederos" className='pestaña'>   Bebederos    </Link>
-            <Link to="/category/Bicicleteros" className='pestaña'   >Bicicleteros   </Link>
-          </Nav.Item>
-          <Link to="/cart"> <CartWidget/></Link>
+          <NavLink  to= "/" className="navbar-brand"> <Logo/> </NavLink>
+          <Navbar.Toggle aria-controls="navbar-nav"/>
+          <Nav className="me-auto">
+            <NavLink exact to="/" className='nav-link'>   Home    </NavLink>
+            <NavLink to="/category/Bancos" className='nav-link'>   Bancos   </NavLink>
+            <NavLink to="/category/Bebederos" className='nav-link'>   Bebederos    </NavLink>
+            <NavLink to="/category/Bicicleteros" className='nav-link'   >Bicicleteros   </NavLink>
+          </Nav>
+          <NavLink to="/cart"> <CartWidget/></NavLink>
         </Container>
       </Navbar>
     </>

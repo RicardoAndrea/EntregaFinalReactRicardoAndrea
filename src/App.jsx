@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer.jsx'
 import NavBar from './Components/NavBar/NavBar.jsx'
@@ -8,11 +5,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Error from './Components/Error.jsx'
 import CartWidget from './Components/CartWidget/CartWidget.jsx'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer.jsx'
+import CartProvider from './Components/Context/CartContext.jsx'
+
 function App() {
   return (
     
       <div className='App colorFondo'>
         <BrowserRouter>
+        <CartProvider> 
         <NavBar/>
         <Routes>
           <Route path={'/'} element={ <ItemListContainer/> }/>
@@ -21,6 +21,7 @@ function App() {
           <Route path={'/cart'} element= { <CartWidget/> }/>
           <Route path={'*'} element= { <Error/> }/> 
         </Routes>
+        </CartProvider>
         </BrowserRouter>
       </div>    
    

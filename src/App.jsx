@@ -6,7 +6,7 @@ import Error from './Components/Error.jsx'
 import CartWidget from './Components/CartWidget/CartWidget.jsx'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer.jsx'
 import CartProvider from './Components/Context/CartContext.jsx'
-
+import './Components/Firebase/config.jsx'
 function App() {
   return (
     

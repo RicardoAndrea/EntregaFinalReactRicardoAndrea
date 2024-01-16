@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget';
 import Logo from '../Logo';
 import { NavLink } from 'react-router-dom';
+import '../Firebase/config.jsx'
 function NavBar() {
   return (
     <>
@@ -11,13 +12,17 @@ function NavBar() {
         <Container className='main'>
           <NavLink  to= "/" className="navbar-brand"> <Logo/> </NavLink>
           <Navbar.Toggle aria-controls="navbar-nav"/>
-          <Nav className="me-auto">
+          <Navbar.Collapse id="navbar-nav">
+           <Nav className="me-auto">
             <NavLink exact to="/" className='nav-link'>   Home    </NavLink>
             <NavLink to="/category/Bancos" className='nav-link'>   Bancos   </NavLink>
             <NavLink to="/category/Bebederos" className='nav-link'>   Bebederos    </NavLink>
-            <NavLink to="/category/Bicicleteros" className='nav-link'   >Bicicleteros   </NavLink>
-          </Nav>
-          <NavLink to="/cart"> <CartWidget/></NavLink>
+            <NavLink to="/category/Bicicleteros" className='nav-link'>Bicicleteros   </NavLink>
+           </Nav>
+           <nav>
+            <NavLink to="/cart"> <CartWidget/></NavLink>
+           </nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

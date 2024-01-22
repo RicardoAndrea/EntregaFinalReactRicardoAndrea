@@ -16,17 +16,17 @@ const ItemCount = ({ initial, stock, onAdd }) => {
 	}, [initial]);
 
 	return (
-		<div className="counter">
-			<button disabled={count <= 1} onClick={decrease} className="operacion">
+		<div className="counter" style={{ pointerEvents: isNaN(stock) || stock <= 0 ? 'none' : 'auto', display: 'flex', alignItems: 'center' }}>
+			<button disabled={count <= 1} onClick={decrease} className="btn btn-primary operacion">
 				-
 			</button>
-			<span>{count}</span>
-			<button disabled={count >= stock} onClick={increase} className="operacion">
+			<span className="ms-2 me-2" style={{ textDecoration: 'none', color: 'black' }}>{count}</span>
+			<button disabled={count >= stock || isNaN(stock)} onClick={increase} className="btn btn-primary operacion">
 				+
 			</button>
 			
 			<div>
-				<button disabled={stock <= 0} onClick={() => onAdd(count)} className="operacion">
+				<button disabled={stock <= 0 || isNaN(stock)} onClick={() => onAdd(count)} className="btn btn-primary">
 					Agregar al carrito
 				</button>
 			</div>

@@ -1,8 +1,7 @@
 import React, { useState, useContext } from 'react';
 
-const CartContext = React.createContext('');//creacion del contexto//
-
-export const useCartContext = () => useContext(CartContext);//creacion del contexto//
+const CartContext = React.createContext('');
+export const useCartContext = () => useContext(CartContext);
 
 const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
@@ -10,7 +9,7 @@ const CartProvider = ({ children }) => {
   const addProduct = (item, quantity) => {
     if (isInCart(item.id)) {
       setCart(
-        cart.map((product) => {
+        cart.map((item) => {
           return product.id === item.id
             ? { ...product, quantity: product.quantity + quantity }
             : product;
@@ -40,7 +39,7 @@ const CartProvider = ({ children }) => {
     setCart(cart.filter((product) => product.id !== id));
 
   return (
-    <CartContext.Provider //.provider es el que transforma el contexto de arriba en provedor//
+    <CartContext.Provider
       value={{
         clearCart,
         isInCart,

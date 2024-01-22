@@ -4,11 +4,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget';
 import Logo from '../Logo';
 import { NavLink } from 'react-router-dom';
-import '../Firebase/config.jsx'
 function NavBar() {
   return (
     <>
-      <Navbar bg="light" data-bs-theme="light">
+       <Navbar bg="light" data-bs-theme="light">
         <Container className='main'>
           <NavLink  to= "/" className="navbar-brand"> <Logo/> </NavLink>
           <Navbar.Toggle aria-controls="navbar-nav"/>

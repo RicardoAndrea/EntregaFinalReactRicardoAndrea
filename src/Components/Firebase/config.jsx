@@ -1,17 +1,21 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCJeLU9Gb2Gjlkqlqdu2nhmqJbjmDK-UhM",
-  authDomain: "react-dipo.firebaseapp.com",
-  projectId: "react-dipo",
-  storageBucket: "react-dipo.appspot.com",
-  messagingSenderId: "562295388870",
-  appId: "1:562295388870:web:6571ffeee5b9094fe435c7"
+  apiKey: "AIzaSyB-Ttod2wnrVSpNOnOHGTihJM0ZD3uogW8",
+  authDomain: "dipo-react-23.firebaseapp.com",
+  projectId: "dipo-react-23",
+  storageBucket: "dipo-react-23.appspot.com",
+  messagingSenderId: "540317522618",
+  appId: "1:540317522618:web:15e780a051a11934a28083",
+  measurementId: "G-MDC4N9D44K"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);

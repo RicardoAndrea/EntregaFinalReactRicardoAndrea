@@ -10,6 +10,7 @@ import Cart from './Components/Cart/Cart.jsx'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer.jsx'
 import CartProvider from './Components/Context/CartContext.jsx'
 import LoaderComponent from './LoaderComponent.jsx'
+import CheckOut from './Components/CheckOut/CheckOut.jsx'
 function App() {
   return (
     
@@ -23,6 +24,7 @@ function App() {
           <Route path={'/category/:id'} element={ <ItemListContainer/> }/>
           <Route path={'/item/:id'} element= { <ItemDetailContainer/> }/>
           <Route path={'/cart'} element= { <Cart/> }/>
+          <Route path={'/checkout'} element= { <CheckOut/> }/>
           <Route path={'*'} element= { <Error/> }/> 
         </Routes>
         </CartProvider>
